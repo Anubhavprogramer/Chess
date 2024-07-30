@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title><%= title %></title>
+    <link rel="stylesheet" href="../styleSheets/style.css">
 </head>
 <body>
-    <div class="w-full h-screen bg-zinc-600 flex items-center justify-center">
-        <div class="chessBoard w-96 h-96 bg-red-700">
-
+    <div class="w-full h-screen bg-zinc-800 flex items-center flex-col justify-center">
+        <h1 class="text-white text-4xl">Chess Game</h1>
+        <h2 id="current-turn" class="text-white">Current Turn: White</h2>
+        <div id="alert" style="color: red;" class="text-white"></div>
+        <div class="h-fit w-fit p-20 bg-black rounded-xl">
+            <div class="chessboard "></div>
         </div>
     </div>
 
