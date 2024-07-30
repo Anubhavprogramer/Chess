@@ -37,8 +37,10 @@ io.on('connection', (uniquesocket) => {
     uniquesocket.on('disconnect', () => {
         if (uniquesocket.id == players.white) {
             delete players.white;
+            console.log('White player disconnected');
         } else if (uniquesocket.id == players.black) {
             delete players.black;
+            console.log('Black player disconnected');
         }
     });
 
